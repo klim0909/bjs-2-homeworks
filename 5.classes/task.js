@@ -70,10 +70,6 @@ class Magazine extends PrintEditionItem {
       if(book.state > 30){
           this.books.push(book);
       }
-      else{
-        this.books = this.books = 0;
-      }
-      return this.books;
     }
     findBookBy(type, value){
       return this.books.find(book => book[type] === value) || null;
